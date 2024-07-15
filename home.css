@@ -1,5 +1,5 @@
 body {
-    background-color: #D2CCCC;
+    background-color: #ffffff;
 }
 
 #headers {
@@ -47,6 +47,13 @@ p {
     text-align: center;
     font-size: 25px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#shampoo{
+  position:relative;
+  height:50%;
+  width:50%;
+  left:375px;
 }
 
 nav {

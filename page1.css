@@ -1,5 +1,5 @@
 body {
-    background-color: #D2CCCC;
+    background-color: #ffffff;
 }
 
 #headers {
@@ -12,7 +12,7 @@ body {
 
 
 h1 {
-    color: #177353;
+    color: #ab1b7d;
     text-align: center;
     margin-top: 300px;
     font-size: 40px;
@@ -32,16 +32,9 @@ h1 {
     font-weight: 100;
 }
   
-.slogan {
-    position: absolute;
-    text-align: left;
-    line-height: 1.5;
-    font-size: 30px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    bottom: 370px;
-    left: 35px;
-    font-weight: 20;
-  }
+#title{
+  font-family:"Concert One";
+}
 
 p {
     color: #627E8B;
@@ -50,12 +43,22 @@ p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+nav {
+  display:flex;
+  position:fixed;
+  width:100%;
+  
+}
+
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #177353;
+    background-color: #ab1b7d;
+    /* background-image: linear-gradient(#a447e3,#e5a5f3); */
+
     position: fixed;
     top: 0;
     left: 0;
@@ -65,30 +68,64 @@ ul {
   li {
     float: right;
     padding: 15px;
-    font-size: 20px;
-    background-color: #177353;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    background-color: #ab1b7d;
+    /* background-image: linear-gradient(#a447e3,#e5a5f3); */
+    font-family: "Concert One";
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
   }
 
   .homebutton {
-    margin-left: 15px;
+    /* float:right; */
+    position:fixed;
+    left:0;
+    top:1vw;
     padding: 15px;
-    font-size: 20px;
-    background-color: #177353;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    /* background-color: #175873; */
+    font-family: "Concert One";
+
+  }
+
+  .homebutton:hover {
+    /* background-color:#d8adf6; */
 
   }
   
   li a {
-    display: inline;
+    display: flex;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
   
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #177353;
+  ul.nav-bar a:hover {
+    /* background-color: #3e778f; */
+    /* background-color:#d8adf6; */
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px; 
+    color:#41082f;
+  
+  }
+
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
   }
 
