@@ -74,6 +74,9 @@ ul {
     font-family: "Concert One";
     /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
   }
+  #info{
+    font-family: "Concert One";
+  }
 
   .homebutton {
     /* float:right; */
