@@ -1,5 +1,5 @@
 body {
-    background-color: #ffffff;
+    background-color: #ebe1e1;
 }
 
 #headers {
@@ -40,13 +40,19 @@ h3 {
     font-size: 30px;
     font-family: "Concert One";
     font-weight: 20;
+    color:black;
   }
 
-p {
-    color: #627E8B;
-    text-align: center;
-    font-size: 25px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+#homeimg{
+  position:absolute;
+  /* margin:auto;  */
+  object-fit:cover;
+  /* display:block; */
+  width:100%;
+  /* height:auto; */
+  left:0;
+  z-index:-1;
+  opacity:45%;
 }
 
 #shampoo{
@@ -60,11 +66,13 @@ nav {
   display:flex;
   position:fixed;
   width:100%;
+  z-index:0;
   
 }
 
 
 ul {
+    z-index:0;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -79,6 +87,7 @@ ul {
   }
   
   li {
+    z-index:0;
     float: right;
     padding: 15px;
     font-size: 28px;
@@ -92,11 +101,12 @@ ul {
     /* float:right; */
     position:fixed;
     left:0;
-    top:1vw;
+    top:-.5vw;
     padding: 15px;
-    font-size: 28px;
+    font-size: 25px;
     /* background-color: #175873; */
     font-family: "Concert One";
+    color:white;
 
   }
 

@@ -79,11 +79,12 @@ li {
   /* float:right; */
   position:fixed;
   left:0;
-  top:1vw;
+  top:-.5vw;
   padding: 15px;
-  font-size: 28px;
+  font-size: 25px;
   /* background-color: #175873; */
   font-family: "Concert One";
+  color:white;
 
 }
 
