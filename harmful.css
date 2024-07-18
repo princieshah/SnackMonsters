@@ -79,17 +79,27 @@ ul {
 
   #header{
     font-family: "Concert One";
-    font-size: 40px;
-  }
-
-  #header1{
-    font-family: "Concert One";
-    margin-top: 0px;
+    font-size: 60px;
+    margin-top: 240px;
     margin-bottom: 100px;
     margin-right: 100px;
     margin-left: 100px;
   }
 
+  #header1{
+    font-family: "Concert One";
+    margin-top: 0px;
+    margin-bottom: 50px;
+    margin-right: 100px;
+    margin-left: 100px;
+    text-align: center;
+  }
+
+  #sub{
+    font-family:"Concert One";
+    margin-bottom: 0px;
+    font-size: 60px;
+  }
   #info{
     font-family: "Concert One";
     margin-top: 0px;
