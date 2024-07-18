@@ -76,6 +76,20 @@ ul {
     font-family: "Concert One";
     /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
   }
+
+  #header{
+    font-family: "Concert One";
+    font-size: 40px;
+  }
+
+  #header1{
+    font-family: "Concert One";
+    margin-top: 0px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+
   #info{
     font-family: "Concert One";
     margin-top: 0px;
