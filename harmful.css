@@ -14,11 +14,13 @@ body {
 h1 {
     color: #ab1b7d;
     text-align: center;
-    margin-top: 300px;
+    margin-top: 150px;
+    margin-bottom: 50px;
     font-size: 40px;
     font-style: italic;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 
 
 .name {
@@ -74,8 +76,26 @@ ul {
     font-family: "Concert One";
     /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
   }
+
+  #header{
+    font-family: "Concert One";
+    font-size: 40px;
+  }
+
+  #header1{
+    font-family: "Concert One";
+    margin-top: 0px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+
   #info{
     font-family: "Concert One";
+    margin-top: 0px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    margin-left: 100px;
   }
 
   .homebutton {
