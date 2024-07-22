@@ -104,7 +104,11 @@ nav {
 }
 h1{
   position: relative;
-
+    color: #000000;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #holding-shampoo{
