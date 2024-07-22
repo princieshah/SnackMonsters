@@ -42,6 +42,44 @@ h3 {
     color:black;
   }
 
+  #rectangle{
+    position:absolute;
+    border-radius: 55px;
+    background:white;
+    padding: 20px;
+    width: 800px;
+    height: 425px;
+    /* top:500px;
+    left:650px; */
+    top:31.5rem;
+    left:40.5rem;
+    opacity:40%;
+  }
+#purpose{
+  position:absolute;
+  font-size:40px;
+  /* margin-left:970px;
+  margin-top:175px; */
+  left:60rem;
+  top:32rem;
+  font-family:"Concert One";
+  justify-content:right;
+  color:#177356
+
+}
+#info{
+  position:absolute;
+  margin-left:680px;
+  margin-top:250px;
+  font-family:"Concert One";
+  font-weight:100;
+  font-size:20px;
+  color:#000000;
+  line-height:2.25;
+  justify-content:right;
+  text-align:center;
+}
+
 #homeimg{
   position:absolute;
   /* margin:auto;  */
@@ -52,13 +90,6 @@ h3 {
   left:0;
   z-index:-1;
   opacity:45%;
-}
-
-#shampoo{
-  position:relative;
-  height:50%;
-  width:50%;
-  left:375px;
 }
 
 nav {
@@ -77,12 +108,14 @@ h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-/* #holding-shampoo{
-  position:relative;
-  height:50%;
-  width:50%;
-
-} */
+#holding-shampoo{
+  position:absolute;
+  /* top:500px;
+  left:100px; */
+  top:30rem;
+  left:8rem;
+  z-index:-1;
+}
 
 
 ul {
