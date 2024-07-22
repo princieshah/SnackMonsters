@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const userText = userInput.value.trim();
         if (userText !== "") {
             addMessageToChat("You", userText, "user");
-            getGemmaResponse(userText);
+            getShampooSenseResponse(userText);
             userInput.value = "";
             userInput.style.height = "auto"; // Reset height to auto
         }
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
         chatBox.scrollTop = chatBox.scrollHeight; // Scroll to the bottom
     }
 
-    async function getGemmaResponse(userText) {
+    async function getShampooSenseResponse(userText) {
         const apiUrl = "http://127.0.0.1:8081/generate"; // URL of your FastAPI server
 
         try {
@@ -59,11 +59,11 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             const data = await response.json();
-            const gemmaResponse = data.response;
-            addMessageToChat("Gemma", gemmaResponse, "gemma");
+            const shampooSenseResponse = data.response;
+            addMessageToChat("Shampoo Sense", shampooSenseResponse, "shampoo-sense");
         } catch (error) {
             console.error('Error:', error);
-            addMessageToChat("Gemma", "Sorry, there was an error processing your request.", "gemma");
+            addMessageToChat("Shampoo Sense", "Sorry, there was an error processing your request.", "shampoo-sense");
         }
     }
 });
