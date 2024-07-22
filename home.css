@@ -48,7 +48,7 @@ h3 {
     padding: 20px;
     width: 800px;
     height: 400px;
-    top: 31.5rem;
+    top: 25rem;
     left: 60%;
     transform: translateX(-50%);
     opacity: 40%;
@@ -60,7 +60,7 @@ h3 {
     width: 90%;
     max-width: 800px;
     left: 60%;
-    top: 31rem;
+    top: 25rem;
     transform: translateX(-50%);
     font-family: "Concert One";
     text-align: center;
@@ -72,7 +72,7 @@ h3 {
     width: 90%;
     max-width: 780px;
     left: 60%;
-    top: 36rem;
+    top: 29rem;
     transform: translateX(-50%);
     font-family: "Concert One";
     font-weight: 100;
@@ -108,7 +108,7 @@ h1 {
 
 #holding-shampoo {
     position: absolute;
-    top: 30rem;
+    top: 25rem;
     left: 2rem;
     z-index: -1;
 }
