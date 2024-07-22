@@ -9,15 +9,15 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: #1e1e1e;
-    color: #1e1e1e;
+    background-color: #ebe1e1;
+    color: #ebe1e1;
     overflow: hidden;
 }
 
 .header {
     width: 100%;
     margin-top: -20px;
-    background-color: #1e1e1e;
+    background-color: #ebe1e1;
     text-align: center;  /* Center align the text */
     display: flex;
     justify-content: center;
@@ -40,10 +40,11 @@ body {
 .title {
     margin: 0;
     font-size: 42px;
-    color: #f5f5f5;
+    color: #177356;
     position: relative;  /* Changed from absolute to relative */
     top: 35px;  /* Adjust this value to move the title down */
     margin-right: 50px;
+    font-family:"Concert One";
 }
 
 .subtitle-container {
@@ -53,15 +54,16 @@ body {
 
 .subtitle {
     margin: 0;
-    font-size: 16px;
-    color: #aaa;  /* Lighter color for the subtitle */
+    font-size: 20px;
+    color: #000000;  /* Lighter color for the subtitle */
+    font-family:"Concert One";
 }
 
 .chat-container {
     flex: 1;
     display: flex;
     flex-direction: column;
-    background-color: #1e1e1e;
+    background-color: #ebe1e1;
     overflow: hidden;
     padding-top: 20px;  /* Added padding to move the chat box up */
 }
@@ -70,7 +72,7 @@ body {
     flex: 1;
     padding: 20px;
     overflow-y: auto;
-    color: #f5f5f5;
+    color: #177356;
     margin: 0 10px 20px 10px;
 }
 
@@ -83,7 +85,7 @@ body {
 }
 
 .message.user {
-    background-color: #007bff;
+    background-color: #177356;
     color: white;
     align-self: flex-start;
     margin-left: auto;
@@ -99,7 +101,7 @@ body {
 .input-container {
     display: flex;
     padding: 10px;
-    background-color: #1e1e1e;
+    background-color: #177356;
 }
 
 .user-input {
@@ -108,14 +110,14 @@ body {
     border: 1px solid #555;
     border-radius: 4px;
     resize: none;
-    background-color: #444;
-    color: #f5f5f5;
+    background-color: #ebe1e1;
+    color: #000000;
 }
 
 .send-btn {
     margin-left: 10px;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #444;
     color: white;
     border: none;
     border-radius: 4px;
@@ -123,5 +125,5 @@ body {
 }
 
 .send-btn:hover {
-    background-color: #0056b3;
+    background-color: #292626;
 }
