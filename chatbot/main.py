@@ -96,7 +96,6 @@ async def generate_response(user_input: UserInput, request: Request):
     # Store the response in the session history
     session_store[session_id].append(f"Gemma: {response_text}")
 
-    print(session_store[session_id])
     # Keep only the last 10 messages in the conversation history
     if len(session_store[session_id]) > 11:  # 10 messages + context
         session_store[session_id] = session_store[session_id][-11:]
