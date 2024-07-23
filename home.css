@@ -211,3 +211,9 @@ li:hover {
 .message-button:hover {
     background-color: #145e42;
 }
+
+#green-bg{
+    position:relative;
+    width:100%;
+
+}
