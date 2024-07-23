@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     async function getShampooSenseResponse(userText) {
-        const apiUrl = "http://127.0.0.1:8081/generate"; // URL of your FastAPI server
+        const apiUrl = "https://c94c-144-118-77-245.ngrok-free.app/generate"; // URL of your FastAPI server
 
         try {
             const response = await fetch(apiUrl, {
