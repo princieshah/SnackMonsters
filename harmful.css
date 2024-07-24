@@ -65,7 +65,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #ab1b7d;
+    background-color:#177356;
     /* background-image: linear-gradient(#a447e3,#e5a5f3); */
 
     position: fixed;
@@ -78,7 +78,7 @@ ul {
     float: right;
     padding: 15px;
     font-size: 28px;
-    background-color: #ab1b7d;
+    background-color: #177356;
     /* background-image: linear-gradient(#a447e3,#e5a5f3); */
     font-family: "Concert One";
     /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
@@ -159,7 +159,7 @@ ul {
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     perspective: 1000px; 
-    color:#41082f;
+    color:#0b4533;
   
   }
 
