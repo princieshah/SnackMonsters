@@ -1,14 +1,14 @@
 "FastAPI code explanation"
 
-This FastAPI server acts as the backend for your application, handling user requests, and interacting with the Gemma API to generate responses.
+This FastAPI server acts as the backend for your application, handling user requests and interacting with the Gemma API to generate responses.
 
-1.	Gemma API Configuration: The Gemma API key is configured and the generative model from the google.generativeai package is initialized.
+1.	Gemma API Configuration: The Gemma API key is configured, and the generative model from the google.generativeai package is initialized.
 
 2.	Middleware Configuration: Cross-Origin Resource Sharing (CORS) middleware is added to allow requests from all origins to the server.
 
 3.	Preprocessing Function: A function is defined to preprocess the user input.
 
-4.	Response Generation Endpoint: A POST endpoint is defined at /generate to generate a response. It preprocesses the input,
+4.	Response Generation Endpoint: A POST endpoint is defined at ""/generate" to generate a response. It preprocesses the input,
     generates a response using the model.
 
 
@@ -19,7 +19,7 @@ This JavaScript code is responsible for the interactive chat interface of your a
 AI’s responses, and some user interface behaviors.
 
 1.	Event Listeners: The keydown event listener checks if the ‘Enter’ key is pressed and sends the message accordingly
-    and shift + Enter changes paragraph.
+    and shift + Enter changes the paragraph.
 
 2.	Auto-adjust Textarea Height: An event listener is set up for the user input field input event to automatically
     adjust the height of the textarea based on its scroll height.
