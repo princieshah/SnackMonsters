@@ -1,7 +1,8 @@
 <?php
-header("Location ../contact.html")
 
-//var_dump($_SERVER["REQUEST_METHOD"]);
+var_dump($_SERVER["REQUEST_METHOD"]);
+header("Location ../contact.html")
+?>
 
 /*if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $firstname = htmlspecialchars($_POST["firstname"])
