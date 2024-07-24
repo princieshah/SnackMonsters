@@ -2,6 +2,10 @@ body {
     background-color: #ffffff;
 }
 
+:root {
+  --secondary: #177356;
+}
+
 #headers {
     /* font-family: sans-serif; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -36,6 +40,9 @@ h1 {
   
 #title{
   font-family:"Concert One";
+  margin-top: 20px;
+  margin-right: 100px;
+  margin-left: 100px;
 }
 
 p {
@@ -84,6 +91,7 @@ ul {
     margin-bottom: 100px;
     margin-right: 100px;
     margin-left: 100px;
+    
   }
 
   #header1{
@@ -99,6 +107,7 @@ ul {
     font-family:"Concert One";
     margin-bottom: 0px;
     font-size: 60px;
+    color: var(--secondary);
   }
   #info{
     font-family: "Concert One";
