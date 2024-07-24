@@ -164,7 +164,7 @@ input[type=email], select, textarea {
   background-color: #DFDFDF;
 }
 
-input[type=submit] {
+button {
   background-color: #177356;
   color: white;
   padding: 12px 20px;

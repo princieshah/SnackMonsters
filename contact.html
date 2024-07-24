@@ -50,7 +50,14 @@
             <label for="subject">message*</label>
             <textarea required id="subject" name="message" placeholder="type your message here" style="height:200px"></textarea>
         
-            <input type="submit">
+            <button type="button" onclick="boom()">Submit</button>
+
+            <script>
+              function boom(){
+                document.getElementById('subject').value = '';
+                alert('Message Sent');
+              }
+            </script>
           </form>
     </div>
     
