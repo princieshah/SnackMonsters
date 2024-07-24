@@ -84,6 +84,11 @@ ul {
     /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
   }
 
+  mark.green{
+    background-color: white;
+    color: var(--secondary)
+  }
+
   #header{
     font-family: "Concert One";
     font-size: 60px;
