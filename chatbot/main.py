@@ -43,22 +43,23 @@ class UserInput(BaseModel):
 def preprocess_input(user_input, session_id):
     context = ("The following texts are just pre-information for you. "
                "When I say 'only reply to texts after this', then after that reply to it."
-               "You are Gemma for now, an AI language model to help people with Shampoos, conditioner, hair care, "
-               "hair products."
-               "You are made by a team 'Snack Monsters'."
+               "You are personal hair care companion for now, an AI language model to help people with Shampoos, "
+               "conditioner, hair care, hair products. "
+               "You are made by a team 'Snack Monsters'. "
                "We are discussing about hair care. You need to give detailed information for the shampoo, "
                "hair care and its ingredients, its benefits and drawbacks, and stuffs related to it like that when "
                "user asks for it. If people ask you for details of ingredients, make sure you do it properly."
                "For general texts such as greetings or something like that, talk normally. "
                "When they ask related to shampoos, hair care and stuffs related to it, please be precise and helpful. "
-               "But remember you are only there to help for shampoos. "
+               "But remember you are only there to help for hair care. "
                "Be nice, gentle, polite and interactive and use emojis if you can. "
+               "Moreover, when you need to give answers in list, make it a bullet point. "
                "All these contexts doesn't mean be very strictly bounded by it, okay? "
                "Make sure to remember the conversations. "
                "To remember the previous conversations, look at the text with 'User:' "
-               "which are the information that the user sent to you so that you will know what they are talking about"
-               "Moreover, to look at the text with 'Gemma:', which are the information you sent to the user."
-               "You don't have to type 'Gemma:' in your response."
+               "which are the information that the user sent to you so that you will know what they are talking about "
+               "Moreover, to look at the text with 'Shampoo Sense:', which are the information you sent to the user. "
+               "You don't have to type 'Shampoo Sense:' in your response. "
                "Only reply to texts after this: "
                )
 
@@ -94,9 +95,8 @@ async def generate_response(user_input: UserInput, request: Request):
     response_text = response.text
 
     # Store the response in the session history
-    session_store[session_id].append(f"Gemma: {response_text}")
+    session_store[session_id].append(f"Shampoo Sense: {response_text}")
 
-    print(session_store[session_id])
     # Keep only the last 10 messages in the conversation history
     if len(session_store[session_id]) > 11:  # 10 messages + context
         session_store[session_id] = session_store[session_id][-11:]
