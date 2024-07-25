@@ -11,6 +11,8 @@ This FastAPI server acts as the backend for your application, handling user requ
 4.	Response Generation Endpoint: A POST endpoint is defined at ""/generate" to generate a response. It preprocesses the input,
     generates a response using the model.
 
+    we run a local server using FastAPI which uses the Gemma's API to recieve the response according to the user's prompt
+
 
 
 "Chatbot Script.js code explanation"
@@ -32,3 +34,6 @@ AI’s responses, and some user interface behaviors.
 
 5.	Get Shampoo Sense Response: The getShampooSenseResponse function sends a POST request to the FastAPI server with
     the user’s message as the prompt and adds the AI’s response to the chat.
+
+the js code from the front end is responsible for connecting to the fastapi server for handling user inputs and AI's response
+we tried to run the api but there was a package error so we needed help from the counsellor and he's hosting the ai
