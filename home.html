@@ -23,24 +23,28 @@
         <div id="rectangle"></div>
 
         <h1 id="purpose">Our purpose:<br></h1>
-        <h2 id="info">At Shampoo Sense, our mission is to empower consumers with the<br> knowledge and resources needed to make informed choices about their hair care.<br> We strive to promote healthier lifestyles by providing a comprehensive platform<br> where consumers can discover safe, effective alternatives to shampoos containing<br> harmful ingredients. Through education, transparency, and a commitment to<br> quality, we aim to transform the way people approach their hair care<br> routines, fostering a community that values wellness and environmental responsibility.</h2>
+        <h2 id="info" class="fade-in">At Shampoo Sense, our mission is to empower consumers with the<br> knowledge and resources needed to make informed choices about their hair care.<br> We strive to promote healthier lifestyles by providing a comprehensive platform<br> where consumers can discover safe, effective alternatives to shampoos containing<br> harmful ingredients. Through education, transparency, and a commitment to<br> quality, we aim to transform the way people approach their hair care<br> routines, fostering a community that values wellness and environmental responsibility.</h2>
 
         <div class=green-bg>
             <img src="greenback.jpg" left="0%" width="100%" height="800px">
 
-            <div class="why-care">
+            <div id="why-care" class="fade-in">
                 WHY🌿CARE?
             </div>
 
-            <div id="why-care-rectangle"></div>
+            <div id="why-care-rectangle"class="fade-in"></div>
 
-            <div id="why-care-blurb">
+            <div id="why-care-blurb" class="fade-in">
                 Healthy hair products are essential for<br> maintaining the overall health 
                 and appearance<br> of your hair. Unlike conventional products<br> that often contain
                 harsh chemicals, healthy<br> hair products are formulated with natural,<br> nourishing
                 ingredients that strengthen hair,<br> prevent damage, and promote growth. By
                 choosing<br> healthy hair products, you not only improve the<br> immediate look
                 and feel of your hair but also<br> ensure its long-term health and vitality.            
+            </div>
+
+            <div class="rotating-leaf">
+                🌿
             </div>
 
 
@@ -63,14 +67,88 @@
             </ul>
         </nav>
 
-        <div id="holding-shampoo">
+        <div id="holding-shampoo" class="fade-in">
             <img src="holding shampoo.png">
         </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+            const elements = document.querySelectorAll('.fade-in');
+    
+            function checkVisibility() {
+            elements.forEach(element => {
+             const rect = element.getBoundingClientRect();
+            if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+                element.classList.add('visible');
+            } else {
+                element.classList.remove('visible');
+            }
+             });
+          }
+
+            // Check visibility on scroll
+            window.addEventListener('scroll', checkVisibility);
+
+         // Initial check on page load
+         checkVisibility();
+        });
+        </script>
     </div>
 
+    <div id = "explore"><u>Explore some of our recommended hair care brands:</u>  </div>
+
+    <div class="healthy-shampoos">
+        <div class="fade-in">
+            <div class="row">
+                <a href = "https://www.siennanaturals.com/products/h-a-p-i-shampoo"class="image-link">
+                 <img src="sienna.png" alt="Image of Sienna Naturals" class="pic"width="30%" height="30%">
+                </a>
+                <div class="text">
+                    <h3>Sienna Naturals H.A.P.I. Nourishing Shampoo</h3>
+                    <p>
+                        Sienna Naturals Shampoo is a gentle, plant-based formula designed to cleanse and nourish<br> hair while maintaining its natural moisture balance. It's ideal for curly, coily, and textured<br> hair types, free from harsh chemicals, and enriched with natural ingredients like baobab<br> oil and coconut oil to promote healthy, vibrant hair.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="fade-in">
+            <div class="row">
+                <a href="https://ceremonia.com/products/conditioner"class="image-link">
+                 <img src="ceremonia.png" alt="Image of Ceremonia Conditioner" class="pic"width="30%" height="30%">
+                </a>
+                <div class="text">
+                    <h3>Ceremonia Hydrating Conditioner</h3>
+                    <p>Ceremonia Conditioner is a nourishing, hydrating treatment that enhances shine and <br>smoothness while detangling and softening hair. Enriched with natural ingredients like babassu<br> oil and coconut extract, it provides essential moisture and nutrients without harsh chemicals. <br>Its formulation is free from sulfates, parabens, and synthetic fragrances, making it a healthy<br> choice for maintaining vibrant, well-conditioned hair.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="fade-in">
+            <div class="row">
+                <a href = "https://www.amazon.com/True-Botanicals-Nourishing-Non-Toxic-Skincare/dp/B08HZC9G4L"class="image-link">
+                 <img src="true-botanicals.png" alt="Image of True Botanicals Nourishing Shampoo" class="pic" width="30%" height="30%">
+                </a>
+                <div class="text">
+                    <h3>True Botanicals Nourishing Shampoo</h3>
+                    <p>True Botanicals Nourishing Shampoo is a gentle, plant-based formula designed to <br>cleanse and revitalize hair while enhancing its natural shine and softness. It stands<br> out due to its use of high-quality, natural ingredients like green tea and aloe<br> vera, which provide deep hydration and nourishment without harsh chemicals. Unlike many <br>conventional shampoos, it is free from sulfates, parabens, and synthetic fragrances, making<br> it ideal for maintaining healthy, balanced hair.</p>
+                </div>
+            </div>
+        </div> 
+        <!-- Add more rows as needed -->
+    </div>
+
+
+
     <footer>
-        follow us
+
+       <p>2024 🌿 Created in Philadelphia, Pennsylvania
+       </p> 
+       <p>
+        Learn more with ShampooSense🌿AI!
+       </p>  
+       
     </footer>
+
 
 
     <a href="chatbot/shampooSenseAI.html" target="_blank">

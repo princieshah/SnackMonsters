@@ -13,8 +13,29 @@ body {
 }
 
 footer{
+    display: flex;
+    justify-content: space-between; /* Space between left and right text */
+    align-items: center; /* Center vertically */
+    font-family: "Concert One", cursive;
+    color:#145e42;
+}
+footer p{
+    float:center;
+    font-size:28px;
+    margin:0;
     font-family:"Concert One";
     color:#145e42;
+}
+
+.image-link{
+    display:inline;
+    height:324px;
+    width:324px;
+}
+.image-link img{
+    display:block;
+    height:100%;
+    width:100%;
 }
 
 h3 {
@@ -35,6 +56,23 @@ h3 {
     color: #177356;
     font-weight: 100;
     line-height: 20rem;
+    /* display: inline-block; */
+    animation: rotateBackForth 1s ease-in-out infinite;
+    animation-iteration-count: 1;
+}
+@keyframes rotateBackForth {
+    0%, 100% {
+        transform: rotate(0deg); /* Starting and ending point */
+    }
+    25% {
+        transform: rotate(-3deg); /* Rotate to the left */
+    }
+    50% {
+        transform: rotate(0deg); /* Back to center */
+    }
+    75% {
+        transform: rotate(3deg); /* Rotate to the right */
+    }
 }
 
 .slogan {
@@ -100,7 +138,7 @@ nav {
     display: flex;
     position: fixed;
     width: 100%;
-    z-index: 0;
+    z-index: 4;
     overflow-x:hidden;
 
 }
@@ -197,8 +235,6 @@ ul.nav-bar a:hover {
     }
 }
 
-li:hover {
-}
 
 .message-button {
     position: fixed;
@@ -236,13 +272,13 @@ li:hover {
     width:100%;
     margin-left:0px;
     padding-top:37rem;
-    opacity:70%;
+    opacity:75%;
     width:100%;
     z-index:-1;
     object-fit:cover;
 }
 
-.why-care{
+#why-care{
     position:absolute;
     /* top:0%;
     left:50%; */
@@ -275,10 +311,111 @@ li:hover {
     left:6%; 
     padding:10px;
     font-family:"Concert One";
+    text-align:center;
     justify-content:center;
     font-size:18px;
     color:#145e42;
     z-index:0; 
     line-height:2.5;
  }
+
+ .rotating-leaf{
+    font-family: "Concert One";
+    font-size: 200px;
+    display: inline-block;
+    animation: rotate 3s infinite ease-in-out; 
+    position:absolute;
+    right:20%;
+    top:60%;
+ }
+ @keyframes rotate {
+    0% {
+        transform: rotate(-10deg); /* Start angle */
+    }
+    50% {
+        transform: rotate(10deg); /* End angle */
+    }
+    100% {
+        transform: rotate(-10deg); /* Return to start angle */
+    }
+}
+
+ .fade-in {
+    opacity: 0; /* Start invisible */
+    transform: translateY(20px); /* Slightly shift down */
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out; /* Smooth transition */
+}
+
+.fade-in.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to original position */
+}
+
+#explore{
+    font-family:"Concert One";
+    color:#145e42;
+    font-size:50px;
+    text-align:center;
+    padding-top:60px;
+
+}
+
+.healthy-shampoos {
+    /* max-width: 900px; */
+    width:105%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ebe1e1;
+    border-radius: 10px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left:0;
+    border-left:0;
+    left:0px;
+    padding: 10px 0;
+    border-bottom: 1px solid #145e42;
+    border-width:100%;
+}
+
+.pic {
+    height: auto;
+    margin-right: 20px;
+    transition: opacity 0.3s ease; 
+    z-index:0;
+}
+
+.pic:hover{
+    opacity:0.5;
+    z-index:0;
+}
+
+.text {
+    flex: 1;
+    font-family:"Concert One";
+    color:#000000;
+    text-align:center;
+    margin:0;
+}
+
+.text h3 {
+    margin: 0;
+    font-size: 2em;
+    font-family:"Concert One";
+    color:#145e42;
+    padding-bottom:50px;
+}
+
+.text p {
+    margin: 5px 0 0;
+    font-size: 1.25em;
+    color: #000000;
+    font-family:"Concert One";
+    text-align:center;
+    line-height:2;
+}
 
