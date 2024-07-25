@@ -16,7 +16,7 @@ model = genai.GenerativeModel()
 # Initialize the FastAPI app
 app = FastAPI()
 
-# Add CORS middleware
+# Add CORS middleware; allows two apis to communicate with each other
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # Allows all origins
